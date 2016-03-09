@@ -95,7 +95,7 @@ int main(int argc, char **argv)
                 if(len < 0){
                     fprintf(stderr, "warning: cannot query manufacturer for device: %s\n", usb_strerror());
                 }
-                fprintf(stderr, "seen device from vendor ->%s<-\n", string); */
+                fprintf(stderr, "seen device from vendor ->%s<-\n", string);
                 if(strcmp(string, "www.anyma.ch") == 0) {
                 
 					len = usbGetStringAscii(handle, dev->descriptor.iProduct, 0x0409, string, sizeof(string));
